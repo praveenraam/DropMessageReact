@@ -1,12 +1,48 @@
-# React + Vite
+# 🔐 Encrypted Messaging App (React + Spring Boot)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project is a secure messaging platform built with **React** for the frontend and **Spring Boot** for the backend. Users can create messages with optional password protection and share them using a unique slug. Viewers must provide the correct password to access encrypted content.
 
-Currently, two official plugins are available:
+## ✨ Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- ✅ Create messages with:
+  - Title
+  - Content
+  - Expiration Date
+  - Optional Encryption (with password)
+- 🔐 View encrypted messages by verifying with password
+- 🔗 Share messages via unique slug
+- 👤 View all messages by a specific user
+- 🔒 JWT-based Authentication and Authorization
+- 🌙 Dark mode support (Tailwind CSS)
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🛠 Tech Stack
+
+### Frontend
+- React
+- Axios
+- React Router DOM
+- Tailwind CSS
+
+### Backend
+- Spring Boot (Java)
+- Spring Security (JWT)
+- RESTful API
+
+---
+
+## 🚀 Getting Started
+
+### Prerequisites
+- Node.js
+- Java 17+
+- Maven
+- MySQL (or your preferred DB)
+
+### Frontend Setup
+
+```bash
+cd frontend
+npm install
+npm start
