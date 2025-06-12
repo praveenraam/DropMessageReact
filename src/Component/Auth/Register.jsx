@@ -32,7 +32,7 @@ const Register = () => {
         }
       
         try {
-          await axios.post('http://localhost:8085/register', {
+          await axios.post('https://dropmessage.onrender.com/register', {
             email: email,
             password: password,
             username: username

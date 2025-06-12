@@ -18,7 +18,7 @@ const ViewMessage = () => {
     const token = localStorage.getItem("JWT_Token");
 
     axios
-      .get(`http://localhost:8085/message/${slug}`, {
+      .get(`https://dropmessage.onrender.com/message/${slug}`, {
         // headers: {
         //   Authorization: `Bearer ${token}`,
         // },

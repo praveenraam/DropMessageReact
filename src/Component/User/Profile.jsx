@@ -16,7 +16,7 @@ const Profile = () => {
     const token = localStorage.getItem("JWT_Token");
 
     axios
-      .get(`http://localhost:8085/u/${username}`, {
+      .get(`https://dropmessage.onrender.com/u/${username}`, {
         // headers: {
         //   Authorization: `Bearer ${token}`,
         // },

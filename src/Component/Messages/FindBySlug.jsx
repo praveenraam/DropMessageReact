@@ -8,29 +8,6 @@ const FindBySlug = () => {
 
   const navigate = useNavigate();
 
-  // useEffect(() => {
-  //   const token = localStorage.getItem('JWT_Token');
-  //   if (!token) {
-  //     navigate('/');
-  //     return;
-  //   }
-
-  //   axios
-  //     .get('http://localhost:8085/api/isValidJWT', {
-  //       headers: {
-  //         Authorization: `Bearer ${token}`,
-  //       },
-  //     })
-  //     .then(() => {
-  //       console.log('Token is valid');
-  //     })
-  //     .catch((error) => {
-  //       console.error('Token validation error', error);
-  //       localStorage.removeItem('JWT_Token');
-  //       navigate('/');
-  //     });
-  // }, [navigate]);
-
   const handleSubmit = () => {
     if (!slug.trim()) {
       setError('Please enter a slug code');

@@ -41,7 +41,7 @@ const MessageForm = () => {
       const token = localStorage.getItem('JWT_Token');
       try {
           const response = await axios.post(
-            'http://localhost:8085/create',
+            'https://dropmessage.onrender.com/create',
             messageData,
             {
               headers: {
@@ -73,7 +73,7 @@ const MessageForm = () => {
       return;
 
     } 
-    axios.get("http://localhost:8085/api/isValidJWT", {
+    axios.get("https://dropmessage.onrender.com/api/isValidJWT", {
       headers: {
         Authorization: `Bearer ${token}`, // or better: Authorization: `Bearer ${token}`
       }
