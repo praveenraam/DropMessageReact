@@ -50,7 +50,7 @@ const Login = () => {
     const token = localStorage.getItem("JWT_Token");
 
     if(token){
-      axios.get("http://localhost:8085/api/isValidJWT", {
+      axios.get("https://dropmessage.onrender.com/api/isValidJWT", {
         headers: {
           Authorization: `Bearer ${token}`, // or better: Authorization: `Bearer ${token}`
         }
